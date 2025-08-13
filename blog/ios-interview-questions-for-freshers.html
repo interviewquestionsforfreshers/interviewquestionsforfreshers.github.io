@@ -35,6 +35,10 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+        h3 {
+    font-size: 1.3em; /* Medium-large font size */
+    margin-top: 15px;
+}
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -47,8 +51,6 @@
             </h1>
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Questions</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">About</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
             </nav>
             <button class="md:hidden text-gray-600">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -63,7 +65,7 @@
                 <!-- Post Header -->
                 <header class="mb-8 border-b pb-6">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Top iOS Interview Questions for Freshers</h2>
-                    <p class="text-gray-500 mt-2">Posted on <time datetime="2024-05-21">May 21, 2024</time></p>
+                    <p class="text-gray-500 mt-2">Posted by <time datetime="2024-05-21"><a href="https://www.linkedin.com/in/amit-gandhi-462232378/">Amit Gandhi</a></time></p>
                 </header>
                 
                 <!-- Intro Content -->
@@ -73,168 +75,107 @@
                 </div>
 
                 <!-- Questions and Answers Section -->
-                <div>
-                    <h3 >Que 1. What is the difference between frame and bounds in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>Frame:</strong> The rectangle that defines the view’s location and size in its <strong>superview’s</strong> coordinate system.</li>
-                            <li><strong>Bounds:</strong> The rectangle that defines the view’s location and size in its <strong>own</strong> coordinate system. Changing the bounds affects the content drawing area without changing the view’s position in the parent view.</li>
-                        </ul></br>
-                    </div>
+                <style>
+h3 {
+    font-size: 1.3em; /* Medium-large font size */
+    margin-top: 15px;
+}
+</style>
 
-                    <h3 >Que 2. What is ARC in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong> ARC (Automatic Reference Counting) is a memory management feature that automatically tracks and releases objects when they are no longer needed. It uses strong, weak, and unowned references to prevent retain cycles.
-                    </div>
+<h3>Que 1. What is the difference between frame and bounds in iOS?</h3>
+<strong>Answer:</strong><br>
+Frame: The rectangle that defines the view’s location and size in its superview’s coordinate system.<br>
+Bounds: The rectangle that defines the view’s location and size in its own coordinate system. Changing the bounds affects the content drawing area without changing the view’s position in the parent view.
 
-                    <h3 >Que 3. Explain delegation in iOS.</h3>
-                    <div >
-                        <strong>Answer:</strong> Delegation is a design pattern where one object assigns responsibility to another object to handle specific tasks or data. It is implemented using a protocol and is commonly used in UIKit for handling events like table view actions.
-                    </div>
+<h3>Que 2. What is ARC in iOS?</h3>
+<strong>Answer:</strong> ARC (Automatic Reference Counting) is a memory management feature that automatically tracks and releases objects when they are no longer needed. It uses strong, weak, and unowned references to prevent retain cycles.
 
-                    <h3 >Que 4. What is the difference between synchronous and asynchronous tasks in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>Synchronous:</strong> The task blocks the current thread until it finishes.</li>
-                            <li><strong>Asynchronous:</strong> The task runs in the background, allowing other code to execute simultaneously.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 3. Explain delegation in iOS.</h3>
+<strong>Answer:</strong> Delegation is a design pattern where one object assigns responsibility to another object to handle specific tasks or data. It is implemented using a protocol and is commonly used in UIKit for handling events like table view actions.
 
-                    <h3 >Que 5. What is the purpose of Grand Central Dispatch (GCD)?</h3>
-                    <div >
-                        <strong>Answer:</strong> GCD is used for managing concurrent code execution by dispatching tasks to different queues. It helps improve application performance and responsiveness by running tasks asynchronously.
-                    </div>
+<h3>Que 4. What is the difference between synchronous and asynchronous tasks in iOS?</h3>
+<strong>Answer:</strong><br>
+Synchronous: The task blocks the current thread until it finishes.<br>
+Asynchronous: The task runs in the background, allowing other code to execute simultaneously.
 
-                    <h3 >Que 6. What is the difference between strong, weak, and unowned references in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>Strong:</strong> Keeps a strong hold on the object, preventing it from being deallocated.</li>
-                            <li><strong>Weak:</strong> Does not retain the object and allows deallocation when no strong references exist.</li>
-                            <li><strong>Unowned:</strong> Similar to weak but assumes the object will not become nil during its lifetime.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 5. What is the purpose of Grand Central Dispatch (GCD)?</h3>
+<strong>Answer:</strong> GCD is used for managing concurrent code execution by dispatching tasks to different queues. It helps improve application performance and responsiveness by running tasks asynchronously.
 
-                    <h3 >Que 7. What is a protocol in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong> A protocol defines a blueprint of methods, properties, and other requirements that a class, struct, or enum can adopt. Protocols support multiple conformances and are used to achieve abstraction.
-                    </div>
+<h3>Que 6. What is the difference between strong, weak, and unowned references in Swift?</h3>
+<strong>Answer:</strong><br>
+Strong: Keeps a strong hold on the object, preventing it from being deallocated.<br>
+Weak: Does not retain the object and allows deallocation when no strong references exist.<br>
+Unowned: Similar to weak but assumes the object will not become nil during its lifetime.
 
-                    <h3 >Que 8. What is the difference between viewDidLoad and viewWillAppear in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>viewDidLoad:</strong> Called once when the view is loaded into memory, used for initial setup.</li>
-                            <li><strong>viewWillAppear:</strong> Called every time the view is about to appear on screen, useful for updating UI.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 7. What is a protocol in Swift?</h3>
+<strong>Answer:</strong> A protocol defines a blueprint of methods, properties, and other requirements that a class, struct, or enum can adopt. Protocols support multiple conformances and are used to achieve abstraction.
 
-                    <h3 >Que 9. How does Core Data work in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong> Core Data is a persistence framework used to manage the model layer of an application. It allows storing, fetching, and manipulating data locally using an object graph and can save data to SQLite, binary, or in-memory stores.
-                    </div>
+<h3>Que 8. What is the difference between viewDidLoad and viewWillAppear in iOS?</h3>
+<strong>Answer:</strong><br>
+viewDidLoad: Called once when the view is loaded into memory, used for initial setup.<br>
+viewWillAppear: Called every time the view is about to appear on screen, useful for updating UI.
 
-                    <h3 >Que 10. What is the difference between UITableView and UICollectionView?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>UITableView:</strong> Displays data in a single column of rows.</li>
-                            <li><strong>UICollectionView:</strong> Displays data in a flexible grid or custom layouts, offering more customization.</li>
-                        </ul></br>
-                    </div>
-                    
-                    <h3 >Que 11. What is the difference between @escaping and @autoclosure in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>@escaping:</strong> Indicates that a closure can be called after the function it’s passed to returns.</li>
-                            <li><strong>@autoclosure:</strong> Automatically wraps an expression into a closure without explicit syntax.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 9. How does Core Data work in iOS?</h3>
+<strong>Answer:</strong> Core Data is a persistence framework used to manage the model layer of an application. It allows storing, fetching, and manipulating data locally using an object graph and can save data to SQLite, binary, or in-memory stores.
 
-                    <h3 >Que 12. What are Codable and Decodable in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong> Codable is a type alias for Encodable and Decodable protocols. They are used to convert objects to and from JSON or other external representations.
-                    </div>
+<h3>Que 10. What is the difference between UITableView and UICollectionView?</h3>
+<strong>Answer:</strong><br>
+UITableView: Displays data in a single column of rows.<br>
+UICollectionView: Displays data in a flexible grid or custom layouts, offering more customization.
 
-                    <h3 >Que 13. What is the difference between struct and class in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>Struct:</strong> Value type, copied on assignment, cannot inherit from other structs.</li>
-                            <li><strong>Class:</strong> Reference type, passed by reference, supports inheritance.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 11. What is the difference between @escaping and @autoclosure in Swift?</h3>
+<strong>Answer:</strong><br>
+@escaping: Indicates that a closure can be called after the function it’s passed to returns.<br>
+@autoclosure: Automatically wraps an expression into a closure without explicit syntax.
 
-                    <h3 >Que 14. What is KVO in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong> KVO (Key-Value Observing) is a mechanism for observing changes to properties of an object, enabling data binding between components.
-                    </div>
+<h3>Que 12. What are Codable and Decodable in Swift?</h3>
+<strong>Answer:</strong> Codable is a type alias for Encodable and Decodable protocols. They are used to convert objects to and from JSON or other external representations.
 
-                    <h3 >Que 15. How does NotificationCenter work?</h3>
-                    <div >
-                        <strong>Answer:</strong> NotificationCenter allows broadcasting and observing events across different parts of an app without direct references. Observers register for specific notifications and execute actions when notifications are posted.
-                    </div>
+<h3>Que 13. What is the difference between struct and class in Swift?</h3>
+<strong>Answer:</strong><br>
+Struct: Value type, copied on assignment, cannot inherit from other structs.<br>
+Class: Reference type, passed by reference, supports inheritance.
 
-                    <h3 >Que 16. What is the difference between synchronous and concurrent queues in GCD?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>Synchronous queue:</strong> Executes tasks in sequence, waiting for each task to finish.</li>
-                            <li><strong>Concurrent queue:</strong> Executes multiple tasks simultaneously without waiting for one to complete.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 14. What is KVO in iOS?</h3>
+<strong>Answer:</strong> KVO (Key-Value Observing) is a mechanism for observing changes to properties of an object, enabling data binding between components.
 
-                    <h3 >Que 17. What is lazy property in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong> A lazy property is only initialized when it is first accessed, useful for delaying expensive operations until they are needed.
-                    </div>
+<h3>Que 15. How does NotificationCenter work?</h3>
+<strong>Answer:</strong> NotificationCenter allows broadcasting and observing events across different parts of an app without direct references. Observers register for specific notifications and execute actions when notifications are posted.
 
-                    <h3 >Que 18. What is the difference between URLSession and Alamofire?</h3>
-                    <div >
-                        <strong>Answer:</strong>
-                        <ul>
-                            <li><strong>URLSession:</strong> Native iOS API for making network requests.</li>
-                            <li><strong>Alamofire:</strong> Third-party library that simplifies network calls with higher-level abstractions.</li>
-                        </ul></br>
-                    </div>
+<h3>Que 16. What is the difference between synchronous and concurrent queues in GCD?</h3>
+<strong>Answer:</strong><br>
+Synchronous queue: Executes tasks in sequence, waiting for each task to finish.<br>
+Concurrent queue: Executes multiple tasks simultaneously without waiting for one to complete.
 
-                    <h3 >Que 19. What is the purpose of SceneDelegate in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong> SceneDelegate manages multiple UI scenes in an iOS app, allowing support for multi-window environments introduced in iOS 13.
-                    </div>
+<h3>Que 17. What is lazy property in Swift?</h3>
+<strong>Answer:</strong> A lazy property is only initialized when it is first accessed, useful for delaying expensive operations until they are needed.
 
-                    <h3 >Que 20. How does iOS handle background tasks?</h3>
-                    <div >
-                        <strong>Answer:</strong> iOS handles background tasks using background fetch, silent push notifications, and BackgroundTasks framework to perform work when the app is not active.
-                    </div>
+<h3>Que 18. What is the difference between URLSession and Alamofire?</h3>
+<strong>Answer:</strong><br>
+URLSession: Native iOS API for making network requests.<br>
+Alamofire: Third-party library that simplifies network calls with higher-level abstractions.
 
-                    <h3 >Que 21. What is Combine framework in iOS?</h3>
-                    <div >
-                        <strong>Answer:</strong> Combine is a reactive programming framework for handling asynchronous events through publishers and subscribers, enabling better chaining and transformation of data streams.
-                    </div>
+<h3>Que 19. What is the purpose of SceneDelegate in iOS?</h3>
+<strong>Answer:</strong> SceneDelegate manages multiple UI scenes in an iOS app, allowing support for multi-window environments introduced in iOS 13.
 
-                    <h3 >Que 22. What is SwiftUI and how is it different from UIKit?</h3>
-                    <div >
-                        <strong>Answer:</strong> SwiftUI is a declarative framework for building UIs using Swift code. It differs from UIKit, which is imperative and requires manual UI updates.
-                    </div>
+<h3>Que 20. How does iOS handle background tasks?</h3>
+<strong>Answer:</strong> iOS handles background tasks using background fetch, silent push notifications, and BackgroundTasks framework to perform work when the app is not active.
 
-                    <h3 >Que 23. What is an extension in Swift?</h3>
-                    <div >
-                        <strong>Answer:</strong> An extension adds new functionality to an existing class, struct, enum, or protocol without subclassing or altering the original source code.
-                    </div>
+<h3>Que 21. What is Combine framework in iOS?</h3>
+<strong>Answer:</strong> Combine is a reactive programming framework for handling asynchronous events through publishers and subscribers, enabling better chaining and transformation of data streams.
 
-                    <h3 >Que 24. What is @State in SwiftUI?</h3>
-                    <div >
-                        <strong>Answer:</strong> @State is a property wrapper that allows SwiftUI to track and update a view when the property value changes.
-                    </div>
+<h3>Que 22. What is SwiftUI and how is it different from UIKit?</h3>
+<strong>Answer:</strong> SwiftUI is a declarative framework for building UIs using Swift code. It differs from UIKit, which is imperative and requires manual UI updates.
 
-                    <h3 >Que 25. How do you secure sensitive data in iOS apps?</h3>
-                    <div >
-                        <strong>Answer:</strong> Sensitive data is secured using Keychain services, encryption, and secure APIs like Secure Enclave. Developers should also follow App Transport Security (ATS) guidelines.
-                    </div>
+<h3>Que 23. What is an extension in Swift?</h3>
+<strong>Answer:</strong> An extension adds new functionality to an existing class, struct, enum, or protocol without subclassing or altering the original source code.
+
+<h3>Que 24. What is @State in SwiftUI?</h3>
+<strong>Answer:</strong> @State is a property wrapper that allows SwiftUI to track and update a view when the property value changes.
+
+<h3>Que 25. How do you secure sensitive data in iOS apps?</h3>
+<strong>Answer:</strong> Sensitive data is secured using Keychain services, encryption, and secure APIs like Secure Enclave. Developers should also follow App Transport Security (ATS) guidelines.
+
                 </div>
 
                 <!-- Download Section -->
@@ -261,9 +202,6 @@
                     <a href="#"><img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=SwiftUI" alt="SwiftUI vs UIKit" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">SwiftUI vs. UIKit: Which to Learn?</h4><p class="text-gray-600 mb-4">An in-depth comparison to help you decide which UI framework to focus on for your iOS career.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
-                    <a href="#"><img src="https://placehold.co/600x400/6366F1/FFFFFF?text=Data+Structures" alt="Data Structures" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Core Data Structures for Interviews</h4><p class="text-gray-600 mb-4">A refresher on the most important data structures that appear in almost every technical interview.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
-                </div>
-<div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
                     <a href="#"><img src="https://placehold.co/600x400/6366F1/FFFFFF?text=Data+Structures" alt="Data Structures" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Core Data Structures for Interviews</h4><p class="text-gray-600 mb-4">A refresher on the most important data structures that appear in almost every technical interview.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
                 </div>
             </div>
