@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Interview Questions and Answers for Freshers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for each question */
+        .question-title {
+            @apply text-xl font-bold text-gray-900 mt-12 pt-6 border-t border-gray-200;
+        }
+        /* Style for the first question to remove top border/padding */
+        .question-title:first-of-type {
+            @apply mt-0 pt-0 border-t-0;
+        }
+        /* Style for the answer block */
+        .answer-block {
+            @apply bg-gray-50 p-5 rounded-lg mt-4 text-gray-700 leading-relaxed;
+        }
+        .answer-block ul {
+            @apply list-disc list-inside pl-2 space-y-2;
+        }
+        .answer-block strong {
+            @apply font-semibold text-gray-800;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        h3 {
+    font-size: 1.3em; /* Medium-large font size */
+    margin-top: 15px;
+}
+p a {
+    color: navy;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #000080;
+    text-decoration: none;
+}
+ 
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">
+                <a href="/">Interview Questions for Freshers</a>
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Questions</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+            <article class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <!-- Post Header -->
+                <header class="mb-8 border-b pb-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Machine Learning Interview Questions and Answers for Freshers</h2>
+                    <p class="text-gray-500 mt-2">Posted by <time datetime="2024-05-21"><a rel="nofollow" href="https://www.linkedin.com/in/amit-gandhi-462232378/" target="_blank">Amit Gandhi</a></time></p>
+                </header>
+                
+                <!-- Intro Content -->
+                <div class="prose max-w-none mb-12">
+                     <p>This <a href="https://interviewquestionanswers.net/it/machine-learning-engineer-interview-questions/">Machine Learning Interview Questions and Answers for Freshers</a> guide covers the most common beginner-friendly Machine Learning topics—supervised vs. unsupervised learning, model evaluation, overfitting, bias–variance, regularization, and more. Each answer is short and practical so you can revise fast before an interview.
+</p>
+
+                <!-- Questions and Answers Section -->
+                <style>
+h3 {
+    font-size: 1.3em; /* Medium-large font size */
+    margin-top: 15px;
+}
+</style>
+
+<h1>25 Machine Learning Interview Questions and Answers for Freshers</h1>
+
+
+<h3>Que 1. What is Machine Learning?</h3>
+<strong>Answer:</strong> Machine Learning is a subset of AI where algorithms learn patterns from data to make predictions or decisions without being explicitly programmed for every rule.
+
+<h3>Que 2. What is the difference between supervised and unsupervised learning?</h3>
+<strong>Answer:</strong><br>
+Supervised: Trains on labeled data (features + target). Used for classification/regression.<br>
+Unsupervised: Trains on unlabeled data to discover structure (e.g., clustering, dimensionality reduction).
+
+<h3>Que 3. What is classification vs. regression?</h3>
+<strong>Answer:</strong><br>
+Classification: Predicts discrete categories (e.g., spam/not spam).<br>
+Regression: Predicts continuous values (e.g., house price).
+
+<h3>Que 4. What is overfitting?</h3>
+<strong>Answer:</strong> Overfitting occurs when a model learns noise/specific patterns in training data and performs poorly on new data. It generalizes badly.
+
+<h3>Que 5. How can you reduce overfitting?</h3>
+<strong>Answer:</strong><br>
+Use more data or data augmentation,<br>
+Apply regularization (L1/L2, dropout),<br>
+Simplify the model,<br>
+Use cross-validation and early stopping.
+
+<h3>Que 6. What is underfitting?</h3>
+<strong>Answer:</strong> Underfitting happens when the model is too simple to capture underlying patterns, leading to poor performance on both training and test data.
+
+<h3>Que 7. Explain bias–variance trade-off.</h3>
+<strong>Answer:</strong> Bias is error from overly simple assumptions; variance is error from excessive sensitivity to data. Good models balance low bias and low variance to generalize well.
+
+<h3>Que 8. What is a training set, validation set, and test set?</h3>
+<strong>Answer:</strong><br>
+Training: For learning model parameters.<br>
+Validation: For tuning hyperparameters and model selection.<br>
+Test: For final, unbiased performance evaluation.
+
+<h3>Que 9. What is cross-validation?</h3>
+<strong>Answer:</strong> A technique (e.g., k-fold) that splits data into multiple folds to train and validate repeatedly, providing a more reliable estimate of model performance.
+
+<h3>Que 10. What is a confusion matrix?</h3>
+<strong>Answer:</strong> A table for classification that shows true/false positives and negatives, helping derive metrics like accuracy, precision, recall, and F1-score.
+
+<h3>Que 11. Define precision, recall, and F1-score.</h3>
+<strong>Answer:</strong><br>
+Precision: TP / (TP + FP) — how many predicted positives are correct.<br>
+Recall: TP / (TP + FN) — how many actual positives are found.<br>
+F1: Harmonic mean of precision and recall; balances both.
+
+<h3>Que 12. What is accuracy and when can it be misleading?</h3>
+<strong>Answer:</strong> Accuracy = (correct predictions / total). It can be misleading on imbalanced datasets where one class dominates.
+
+<h3>Que 13. What is ROC curve and AUC?</h3>
+<strong>Answer:</strong> ROC plots TPR vs. FPR at various thresholds. AUC measures area under the ROC; higher AUC indicates better separability.
+
+<h3>Que 14. What is regularization (L1/L2)?</h3>
+<strong>Answer:</strong> Regularization adds a penalty to the loss to discourage overly complex models. L1 (Lasso) encourages sparsity; L2 (Ridge) shrinks weights smoothly.
+
+<h3>Que 15. What is feature scaling and why is it needed?</h3>
+<strong>Answer:</strong> Scaling (standardization/normalization) puts features on similar ranges so gradient-based methods and distance-based models work effectively.
+
+<h3>Que 16. What is gradient descent?</h3>
+<strong>Answer:</strong> An optimization algorithm that iteratively updates parameters in the direction of the negative gradient of the loss to find minima.
+
+<h3>Que 17. What are hyperparameters vs. parameters?</h3>
+<strong>Answer:</strong><br>
+Parameters: Learned from data (e.g., weights).<br>
+Hyperparameters: Set before training (e.g., learning rate, depth, C, k) and tuned via validation.
+
+<h3>Que 18. What is k-Nearest Neighbors (k-NN)?</h3>
+<strong>Answer:</strong> A simple algorithm that classifies a point based on the majority label among its k closest neighbors (distance-based). Works for regression too (average of neighbors).
+
+<h3>Que 19. What is linear regression and its assumptions?</h3>
+<strong>Answer:</strong> Predicts a continuous target as a linear combination of features. Common assumptions: linearity, independent errors, homoscedasticity, and normality of errors (approximate).
+
+<h3>Que 20. What is logistic regression?</h3>
+<strong>Answer:</strong> A classification algorithm modeling the probability of a class using the logistic (sigmoid) function; outputs probabilities and class labels via a threshold.
+
+<h3>Que 21. What is a decision tree and its pros/cons?</h3>
+<strong>Answer:</strong><br>
+Decision Tree: Splits data by feature thresholds to form a tree of decisions.<br>
+Pros: Interpretable, handles nonlinearity, little preprocessing.<br>
+Cons: Prone to overfitting; unstable to small data changes.
+
+<h3>Que 22. What are ensemble methods (Bagging, Random Forest, Boosting)?</h3>
+<strong>Answer:</strong><br>
+Bagging: Train models on bootstrapped samples and average (reduces variance).<br>
+Random Forest: Bagging + random feature selection at splits.<br>
+Boosting: Sequentially trains weak learners to correct previous errors (e.g., AdaBoost, XGBoost).
+
+<h3>Que 23. What is PCA and when is it used?</h3>
+<strong>Answer:</strong> Principal Component Analysis reduces dimensionality by projecting data onto directions with maximum variance, helping visualization, noise reduction, and speed.
+
+<h3>Que 24. What is one-hot encoding vs. label encoding?</h3>
+<strong>Answer:</strong><br>
+One-hot: Creates binary columns per category (no order).<br>
+Label: Assigns integer IDs (implies order; suitable for tree models, but may mislead linear models).
+
+<h3>Que 25. What is the difference between epochs, batches, and batch size?</h3>
+<strong>Answer:</strong><br>
+Epoch: One full pass over the training data.<br>
+Batch: A subset processed before updating parameters.<br>
+Batch size: Number of samples in one batch.
+            </br>
+                <hr style="border: none; height: 2px; background-color: #ccc; margin: 20px 0;"></br>
+<p>You can also Download the PDF from here:</p>
+                    <a href="https://interviewquestionanswers.net/it/machine-learning-engineer-interview-questions/" class="inline-block mt-3 bg-indigo-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow">Machine Learning Interview Questions PDF</a>
+                
+                </div>
+
+    <!-- Related Posts Section -->
+    <section id="related-posts" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">You Might Also Like</h3>
+                <p class="text-gray-600 mt-2">Explore other topics to round out your interview preparation.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <a href="https://interviewquestionsforfreshers.github.io/blog/ios-interview-questions-for-freshers.html"><img src="https://placehold.co/600x400/10B981/FFFFFF?text=iOS" alt="Android Questions" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Top iOS Interview Questions</h4><p class="text-gray-600 mb-4">Prepare for your iOS developer interview with Swift programming, app development, and mobile concepts.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <a href="https://interviewquestionanswers.net/technical/web-developer-interview-questions/"><img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Web+Developer" alt="Web Developer interview questions" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Web Developer Interview Questions</h4><p class="text-gray-600 mb-4">Web development is building and maintaining web applications that are hosted on the browser.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <a href="https://interviewquestionanswers.net/technical/full-stack-developer-interview-questions/"><img src="https://placehold.co/600x400/6366F1/FFFFFF?text=Full+Stack+Developer" alt="Full Stack Developer Interview" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Full Stack Developer Interview Questions</h4><p class="text-gray-600 mb-4">A full-stack developer is a programmer who works with both the front-end and back-end of a website or application.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+        
+            <p>&copy; 2025 InterviewQuestionsForFreshers. All Rights Reserved.</p>
+        </div>
+    </footer>
+ </body>
+</html>
