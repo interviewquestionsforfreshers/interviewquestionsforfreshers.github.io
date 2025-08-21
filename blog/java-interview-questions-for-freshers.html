@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Interview Questions and Answers for Freshers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for each question */
+        .question-title {
+            @apply text-xl font-bold text-gray-900 mt-12 pt-6 border-t border-gray-200;
+        }
+        /* Style for the first question to remove top border/padding */
+        .question-title:first-of-type {
+            @apply mt-0 pt-0 border-t-0;
+        }
+        /* Style for the answer block */
+        .answer-block {
+            @apply bg-gray-50 p-5 rounded-lg mt-4 text-gray-700 leading-relaxed;
+        }
+        .answer-block ul {
+            @apply list-disc list-inside pl-2 space-y-2;
+        }
+        .answer-block strong {
+            @apply font-semibold text-gray-800;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+      h3 {
+    font-size: 1.3em; /* Medium-large font size */
+    margin-top: 15px;
+}
+    h1 {
+    font-size: 1.9em; /* Medium-large font size */
+    margin-top: 15px;
+}
+p a {
+    color: navy;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #000080;
+    text-decoration: none;
+}
+ 
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">
+                <a href="/">Interview Questions for Freshers</a>
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Questions</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+            <article class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <!-- Post Header -->
+                <header class="mb-8 border-b pb-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Java Interview Questions and Answers for Freshers</h2>
+                    <p class="text-gray-500 mt-2">Posted by <time datetime="2025-08-14"><a rel="nofollow" href="https://www.linkedin.com/in/amit-gandhi-462232378/" target="_blank">Amit Gandhi</a></time></p>
+                </header>
+                
+                <!-- Intro Content -->
+                <div class="prose max-w-none mb-12">
+                     <p>This <a href="https://interviewquestionanswers.net/technical/java-interview-questions/">Java Interview Questions and Answers</a> Java is one of the most popular programming languages, widely used for web applications, desktop software, mobile apps, and enterprise solutions. Freshers applying for Java developer roles are often asked fundamental questions to test their knowledge of core concepts, syntax, and object-oriented programming. Below are 20 commonly asked Java interview questions with simple answers to help you prepare effectively.
+</p>
+
+                <!-- Questions and Answers Section -->
+                   <style>
+h1 {
+    font-size: 1.7em; /* Medium-large font size */
+    margin-top: 15px;
+}
+</style>
+<h1>Java Interview Questions and Answers for Freshers</h1></br>
+
+                     <style>
+h3 {
+    font-size: 1.3em; /* Medium-large font size */
+    margin-top: 15px;
+}
+</style>
+
+<h2>Java Interview Questions and Answers for Freshers</h2>
+    <p>Below are most commonly asked Java interview questions with simple, concise answers for freshers you can review quickly.</p>
+
+    <h3>Que 1. What is Java?</h3>
+    <p><strong>Answer:</strong> Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It is platform-independent because of the JVM (Java Virtual Machine).</p>
+
+    <h3>Que 2. What are the main features of Java?</h3>
+    <p><strong>Answer:</strong> Key features include platform independence, object-oriented nature, simplicity, security, portability, multithreading, automatic memory management, and a rich API.</p>
+
+    <h3>Que 3. What is the difference between JDK, JRE, and JVM?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>JDK:</strong> Java Development Kit – includes tools to write and compile code.</li>
+        <li><strong>JRE:</strong> Java Runtime Environment – provides libraries and JVM to run Java programs.</li>
+        <li><strong>JVM:</strong> Java Virtual Machine – executes Java bytecode.</li>
+      </ul>
+    </p>
+
+    <h3>Que 4. What are the data types in Java?</h3>
+    <p><strong>Answer:</strong> Java has two categories: 
+      <ul>
+        <li><strong>Primitive types:</strong> byte, short, int, long, float, double, char, boolean.</li>
+        <li><strong>Non-primitive types:</strong> Strings, arrays, classes, interfaces.</li>
+      </ul>
+    </p>
+
+    <h3>Que 5. What is the difference between == and .equals() in Java?</h3>
+    <p><strong>Answer:</strong> The <code>==</code> operator compares object references (memory locations), while <code>.equals()</code> compares the actual content of objects.</p>
+
+    <h3>Que 6. What is OOPs in Java?</h3>
+    <p><strong>Answer:</strong> OOPs (Object-Oriented Programming System) is a concept based on objects and classes. The main principles are Encapsulation, Inheritance, Polymorphism, and Abstraction.</p>
+
+    <h3>Que 7. What is a class and object in Java?</h3>
+    <p><strong>Answer:</strong> A class is a blueprint that defines properties and behavior (methods). An object is an instance of a class that uses these properties and behaviors.</p>
+
+    <h3>Que 8. What is the difference between an interface and an abstract class?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>Interface:</strong> Defines only abstract methods (Java 8+ allows default and static methods).</li>
+        <li><strong>Abstract class:</strong> Can have both abstract and non-abstract methods.</li>
+      </ul>
+    </p>
+
+    <h3>Que 9. What is a constructor in Java?</h3>
+    <p><strong>Answer:</strong> A constructor is a special method used to initialize objects. It has the same name as the class and does not return a value.</p>
+
+    <h3>Que 10. What is method overloading and overriding?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>Overloading:</strong> Same method name with different parameter lists in the same class.</li>
+        <li><strong>Overriding:</strong> A subclass provides a specific implementation of a method already defined in its parent class.</li>
+      </ul>
+    </p>
+
+    <h3>Que 11. What are access modifiers in Java?</h3>
+    <p><strong>Answer:</strong> Access modifiers control visibility: 
+      <ul>
+        <li><strong>public:</strong> accessible everywhere</li>
+        <li><strong>protected:</strong> accessible within package and subclasses</li>
+        <li><strong>default:</strong> accessible within the package</li>
+        <li><strong>private:</strong> accessible only within the class</li>
+      </ul>
+    </p>
+
+    <h3>Que 12. What is the difference between Array and ArrayList?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>Array:</strong> Fixed size, can store both primitives and objects.</li>
+        <li><strong>ArrayList:</strong> Dynamic size, stores only objects, provides built-in methods.</li>
+      </ul>
+    </p>
+
+    <h3>Que 13. What is the difference between final, finally, and finalize?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>final:</strong> Keyword used to declare constants, prevent inheritance, or prevent method overriding.</li>
+        <li><strong>finally:</strong> A block that executes after try-catch, used for cleanup.</li>
+        <li><strong>finalize():</strong> A method called before garbage collection to clean up resources.</li>
+      </ul>
+    </p>
+
+    <h3>Que 14. What is garbage collection in Java?</h3>
+    <p><strong>Answer:</strong> Garbage collection is the automatic process of removing unused objects from memory to free resources.</p>
+
+    <h3>Que 15. What is the difference between checked and unchecked exceptions?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>Checked exceptions:</strong> Must be handled at compile-time (e.g., IOException).</li>
+        <li><strong>Unchecked exceptions:</strong> Occur at runtime and do not require explicit handling (e.g., NullPointerException).</li>
+      </ul>
+    </p>
+
+    <h3>Que 16. What is multithreading in Java?</h3>
+    <p><strong>Answer:</strong> Multithreading allows concurrent execution of two or more parts of a program to maximize CPU utilization and improve performance.</p>
+
+    <h3>Que 17. What are the differences between String, StringBuilder, and StringBuffer?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>String:</strong> Immutable sequence of characters.</li>
+        <li><strong>StringBuilder:</strong> Mutable, faster, but not thread-safe.</li>
+        <li><strong>StringBuffer:</strong> Mutable, thread-safe but slower.</li>
+      </ul>
+    </p>
+
+    <h3>Que 18. What is the use of the static keyword in Java?</h3>
+    <p><strong>Answer:</strong> The <code>static</code> keyword is used for variables, methods, or blocks that belong to the class rather than an instance. It allows access without creating an object.</p>
+
+    <h3>Que 19. What is the difference between ‘this’ and ‘super’ keywords?</h3>
+    <p><strong>Answer:</strong> 
+      <ul>
+        <li><strong>this:</strong> Refers to the current class instance.</li>
+        <li><strong>super:</strong> Refers to the parent class and can call parent methods or constructors.</li>
+      </ul>
+    </p>
+
+    <h3>Que 20. Why should we hire you for a Java Developer role as a fresher?</h3>
+    <p><strong>Answer:</strong> As a fresher, highlight your strong foundation in Java concepts, ability to learn quickly, enthusiasm to work in real-world projects, and problem-solving approach that will add value to the team.</p>
+ <br>
+            </br>
+                <hr style="border: none; height: 2px; background-color: #ccc; margin: 20px 0;"></br>
+<p>You can also Download the PDF from here:</p>
+                    <a href="https://interviewquestionanswers.net/it/business-analyst-interview-questions/" class="inline-block mt-3 bg-indigo-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow">Business Analyst Interview Questions PDF</a>
+                
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>
+</main>
+    <!-- Related Posts Section -->
+    <section id="related-posts" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">You Might Also Like</h3>
+                <p class="text-gray-600 mt-2">Explore other topics to round out your interview preparation.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+ <a href="https://interviewquestionsforfreshers.github.io/blog/machine-learning-interview-questions-for-freshers.html">
+                            <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Machine+Learning" alt="Machine Learning Interview Questions" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Machine Learning Interview Questions for Freshers</h4>
+                                <p class="text-gray-600 mb-4">This Machine Learning Interview Questions and Answers guide covers the most common beginner-friendly Machine Learning topics</p>
+                                <span class="text-indigo-600 font-semibold">Read More &rarr;</span>                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <a href="https://interviewquestionanswers.net/technical/web-developer-interview-questions/"><img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Web+Developer" alt="Web Developer interview questions" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Web Developer Interview Questions</h4><p class="text-gray-600 mb-4">Web development is building and maintaining web applications that are hosted on the browser.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <a href="https://interviewquestionanswers.net/technical/full-stack-developer-interview-questions/"><img src="https://placehold.co/600x400/6366F1/FFFFFF?text=Full+Stack+Developer" alt="Full Stack Developer Interview" class="w-full h-48 object-cover"><div class="p-6"><h4 class="text-xl font-bold text-gray-900 mb-2">Full Stack Developer Interview Questions</h4><p class="text-gray-600 mb-4">A full-stack developer is a programmer who works with both the front-end and back-end of a website or application.</p><span class="text-indigo-600 font-semibold">Read More &rarr;</span></div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+        
+            <p>&copy; 2025 InterviewQuestionsForFreshers. All Rights Reserved.</p>
+        </div>
+    </footer>
+        </body>
+</html>
